@@ -24,13 +24,12 @@ const useStyles = makeStyles({
     },
     cardContainer:{
         maxWidth: 345,
-        margin: "3rem",
-        margin : "5rem, auto"
+        margin : "3rem auto"
     }
 })
 const Portfolio = (props) => {
 
-    const className = useStyles()
+    const classes = useStyles()
   return (
     <>
     	<Box component="div" className={classes.mainContainer}>
@@ -47,23 +46,109 @@ const Portfolio = (props) => {
     	  				image={project1}
     	  				/>
     	  				<CardContent>
-    	  					<Typography gutterButtom variant="h5">
+    	  					<Typography gutterBottom variant="h5">
     	  						Project -1 
     	  					</Typography>
-    	  					<Typography variant="body" color="textSecondary" component="p">
+    	  					<Typography variant="body2" color="textSecondary" component="p">
     	  						In publishing and graphic design, Lorem 
     	  						ipsum is a placeholder text commonly used to 
     	  						demonstrate the visual form of a document or a typeface 
     	  						without relying on meaningful content. Wikipedia
     	  					</Typography>
     	  				</CardContent>
+                        </CardActionArea>
     	  				<CardActions>
     	  					<Button size="small" color="primary">Source Code</Button>
     	  					<Button size="small" color="primary">Live</Button>
-
     	  				</CardActions>
-    	  		</CardActionArea>
     	  	  </Card>
+              </Grid>
+              {/*Project 1*/}
+             <Grid item xs={12} sm={8} md = {6}>
+              <Card className={classes.cardContainer}>
+                <CardActionArea>
+                    <CardMedia 
+                        component="img"
+                        alt="project-1"
+                        height="140"
+                        image={project1}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5">
+                                Project -1 
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                In publishing and graphic design, Lorem 
+                                ipsum is a placeholder text commonly used to 
+                                demonstrate the visual form of a document or a typeface 
+                                without relying on meaningful content. Wikipedia
+                            </Typography>
+                        </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary">Source Code</Button>
+                            <Button size="small" color="primary">Live</Button>
+                        </CardActions>
+              </Card>
+              </Grid>
+                {/*Project 1*/}
+             <Grid item xs={12} sm={8} md = {6}>
+              <Card className={classes.cardContainer}>
+                <CardActionArea>
+                    <CardMedia 
+                        component="img"
+                        alt="project-1"
+                        height="140"
+                        image={project1}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5">
+                                Project -1 
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                In publishing and graphic design, Lorem 
+                                ipsum is a placeholder text commonly used to 
+                                demonstrate the visual form of a document or a typeface 
+                                without relying on meaningful content. Wikipedia
+                            </Typography>
+                        </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary">Source Code</Button>
+                            <Button size="small" color="primary">Live</Button>
+                        </CardActions>
+              </Card>
+              </Grid>
+
+
+                {/*Project 1*/}
+             <Grid item xs={12} sm={8} md = {6}>
+              <Card className={classes.cardContainer}>
+                <CardActionArea>
+                    <CardMedia 
+                        component="img"
+                        alt="project-1"
+                        height="140"
+                        image={project1}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5">
+                                Project -1 
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                In publishing and graphic design, Lorem 
+                                ipsum is a placeholder text commonly used to 
+                                demonstrate the visual form of a document or a typeface 
+                                without relying on meaningful content. Wikipedia
+                            </Typography>
+                        </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary">Source Code</Button>
+                            <Button size="small" color="primary">Live</Button>
+                        </CardActions>
+              </Card>
+
     	  	 </Grid>
     	  </Grid>
     	</Box>
