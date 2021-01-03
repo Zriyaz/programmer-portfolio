@@ -7,15 +7,15 @@ import {
 	Box
 } from "@material-ui/core"
 import Typed from "react-typed"
-import avatar from "../images/avatar.png"
+import avatar from "../images/mypic.jpg"
 
 // css styles
 
 const useStyles = makeStyles(theme => ({
 	avatar: {
-		width: theme.spacing(15),
-		height: theme.spacing(15),
-		margin: theme.spacing(15)
+		width: theme.spacing(19),
+		height: theme.spacing(20),
+		margin: theme.spacing(8)
 	},
 	title:{
 		color: "tomato",

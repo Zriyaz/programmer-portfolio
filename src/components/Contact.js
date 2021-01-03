@@ -3,6 +3,7 @@ import {makeStyles, withStyles} from "@material-ui/core/styles"
 import {TextField, Typography, Button, Grid, Box} from "@material-ui/core"
 import SendIcon from "@material-ui/icons/Send"
 import Navbar from "./Navbar"
+import {Helmet} from "react-helmet"
 
 const useStyles= makeStyles(theme=>({
 	form:{
@@ -51,6 +52,11 @@ const Contact = (props) => {
 
 	const classes = useStyles()
   return (
+	<> 
+	<Helmet>
+			<meta charSet="utf-8" />
+			<title>Contact</title>
+		</Helmet> 
     <Box component="div">
      <Navbar />
     	<Grid container justify="center">
@@ -89,6 +95,7 @@ const Contact = (props) => {
     		</Box>
     	</Grid>
     </Box>
+   </>
   )
 }
 
